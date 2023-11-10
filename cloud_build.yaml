@@ -2,7 +2,7 @@ steps:
   # build the container image
   - name: "gcr.io/cloud-builders/docker"
     args:
-      ["build", "-f", "Dockerfile.$PROJECT_ID", "-t", "gcr.io/$PROJECT_ID/juliocascom-public:${SHORT_SHA}", "."]
+      ["build", "-f", "Dockerfile", "-t", "gcr.io/$PROJECT_ID/juliocascom-public:${SHORT_SHA}", "."]
     # push the container image to Container Registry
   - name: "gcr.io/cloud-builders/docker"
     args: ["push", "gcr.io/$PROJECT_ID/juliocascom-public:${SHORT_SHA}"]
