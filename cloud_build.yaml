@@ -11,7 +11,7 @@ steps:
     args:
       [
         "beta",
-        "start",
+        "run",
         "deploy",
         "juliocascom-public",
         "--image",
