@@ -1,0 +1,55 @@
+.container {
+  display: block;
+  border: 1.2px #A9A9A9 solid;
+  border-radius: 1rem;
+  margin: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  min-width: 280px;
+}
+
+.container input,textarea {
+  border: .5px #A9A9A9 solid;
+  border-radius: .5rem;
+  padding: .6rem;
+  margin: .2rem;
+}
+
+.button {
+  border: .5px #000000 solid;
+  border-radius: .5rem;
+  padding: .5rem;
+  margin: 1rem;
+  font-weight: 600;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+}
+
+.label {
+  font-size: 1rem;
+  margin: .5rem;
+  font-weight: 400;
+  min-width: 80px;
+  text-align: right;
+}
+
+.contact-info {
+  font-size: 1rem;
+}
+
+.show-contact {
+  cursor: pointer;
+}
+
+.show-contact:hover {
+  color: #A9A9A9;
+}

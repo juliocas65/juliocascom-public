@@ -2,6 +2,7 @@ import logo from './assets/images/juliocascom.png';
 import './App.css';
 import Footer from './components/Footer';
 import Sections from './components/Sections';
+import { Contact } from './components/Contact';
 
 function App() {
   const sections = ['My Experience', 'My Articles', 'My Social Media'];
@@ -15,6 +16,7 @@ function App() {
         <Sections
           sections={sections}
         ></Sections>
+        <Contact></Contact>
         <Footer></Footer>
       </header>
     </div>
