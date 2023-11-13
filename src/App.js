@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import logo from './assets/images/juliocascom.png';
 import './App.css';
 import Footer from './components/Footer';
 import Sections from './components/Sections';

@@ -3,7 +3,7 @@ import Proptypes from 'prop-types';
 
 const Sections = (props) => {
   const { sections } = props;
-  const haveSections = () => {
+  const handleSections = () => {
     return (
       <div className='list'>
       <p>Pretty soon you'll see here: </p>
@@ -25,7 +25,7 @@ const Sections = (props) => {
     <>
       {
         sections.length > 0 ?
-        haveSections() :
+        handleSections() :
         (<p> Without Sections </p>)
       }
     </>

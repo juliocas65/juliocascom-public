@@ -2,7 +2,10 @@ import React from 'react';
 import './Footer.css';
 
 const Footer = () => {
-  let email = 'juliocas65@gmail.com';
+  const email = 'juliocas65@gmail.com';
+  const handleEmail = (e) => {
+    alert(`You will send an email to ${email}`);
+  }
   return (
     <>
       <p className='footer'>
@@ -10,7 +13,10 @@ const Footer = () => {
       </p>
       <span className='email-contact'>
         For any doubts, please contact me at:
-        <a className="email" href={`mailto:${email}`}>
+        <a
+          className="email"
+          href={`mailto:${email}`}
+          onClick={e => handleEmail()}>
           {email}
         </a>
       </span>
