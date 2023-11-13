@@ -5,20 +5,22 @@ const Sections = (props) => {
   const { sections } = props;
   const handleSections = () => {
     return (
-      <div className='list'>
-      <p>Pretty soon you'll see here: </p>
-      <ul>
-      {
-        sections.map((section, index) => {
-          return (
-            <li key={index}>
-              {section}
-            </li>
-          )
-        })
-      }
-      </ul>
-    </div>
+      <>
+        <p>Pretty soon you'll see here: </p>
+        <div className='list'>
+          {
+            sections.map((section, index) => {
+              return (
+                <div
+                  key={index}
+                  className="section centered">
+                  {section}
+                </div>
+              )
+            })
+          }
+        </div>
+      </>
     )
   };
   return (
