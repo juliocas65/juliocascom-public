@@ -1,7 +1,7 @@
 import React from 'react'
 import './Home.css';
-import Sections from '../Sections';
-import { Contact } from '../Contact';
+import Sections from '../domain/Sections';
+import { Contact } from '../domain/Contact';
 
 export const Home = () => {
   const sections = [
