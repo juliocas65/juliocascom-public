@@ -1,5 +1,6 @@
 import './Sections.css';
 import Proptypes from 'prop-types';
+import { NavLink } from 'react-router-dom';
 
 const Sections = (props) => {
   const { sections } = props;
@@ -11,11 +12,15 @@ const Sections = (props) => {
           {
             sections.map((section, index) => {
               return (
-                <div
-                  key={index}
-                  className="section">
-                  {section}
-                </div>
+                <NavLink
+                  to={section.link}
+                  className="link">
+                  <div
+                    key={index}
+                    className="section">
+                    {section.name}
+                  </div>
+                </NavLink>
               )
             })
           }

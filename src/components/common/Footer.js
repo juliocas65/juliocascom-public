@@ -1,14 +1,14 @@
 import React from 'react';
 import './Footer.css';
 
-const Footer = () => {
+export const Footer = () => {
   const email = 'juliocas65@gmail.com';
   const handleEmail = (e) => {
     alert(`You will send an email to ${email}`);
   }
   return (
     <>
-    <div className='mt-3'>
+    <div className='footer-container mt-4'>
       <p className='footer'>
         All rights reserved 2023
       </p>
@@ -26,5 +26,3 @@ const Footer = () => {
     </>
   );
 }
-
-export default Footer;

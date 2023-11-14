@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 35vmin;
   pointer-events: none;
 }
 
@@ -28,4 +28,28 @@
   to {
     transform: rotate(360deg);
   }
+}
+.wave-top {
+  margin-top: -80px;
+}
+.wave {
+  height: 80px;
+  overflow: hidden;
+  top: -.1rem;
+}
+.wave > svg{
+  height: 100%;
+  width: 100%;
+}
+.wave > svg > path {
+  stroke: none;
+  fill: #525252
+}
+.section1 {
+  background-color: #525252;
+  color: #FFFFFF;
+}
+.section1 .title {
+  margin-top: -.1rem;
+  font-size: 1.2rem;
 }

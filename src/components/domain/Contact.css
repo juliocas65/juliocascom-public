@@ -1,20 +1,18 @@
-.container {
-  display: block;
+.contact-container {
   border: 1.2px #A9A9A9 solid;
   border-radius: 1rem;
-  margin: .5rem;
+  margin: 0rem .5rem;
   padding-left: 2rem;
   padding-right: 2rem;
   min-width: 280px;
 }
 
-.container input,textarea {
+.contact-container input, textarea {
   border: .5px #A9A9A9 solid;
   border-radius: .5rem;
-  padding: .6rem;
-  margin: .2rem;
+  padding: .5rem;
+  margin: .4rem 0rem;
 }
-
 .button {
   border: .5px #000000 solid;
   border-radius: .5rem;
@@ -26,13 +24,11 @@
   font-size: 1rem;
   cursor: pointer;
 }
-
 .centered {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 .label {
   font-size: 1rem;
   margin: .5rem;
@@ -40,11 +36,9 @@
   min-width: 80px;
   text-align: right;
 }
-
 .contact-info {
   font-size: 1rem;
 }
-
 .show-contact {
   cursor: pointer;
 }
