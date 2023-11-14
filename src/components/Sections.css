@@ -2,9 +2,8 @@
   width: 100%;
   height: auto;
   display: grid;
-  text-align: center;
+  grid-template-areas: "section";
   justify-content: center;
-  grid-template-columns: auto;
 }
 
 .section {

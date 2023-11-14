@@ -13,7 +13,7 @@ const Sections = (props) => {
               return (
                 <div
                   key={index}
-                  className="section centered">
+                  className="section">
                   {section}
                 </div>
               )

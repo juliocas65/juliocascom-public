@@ -1,26 +1,17 @@
-import logo from './assets/images/juliocascom.png';
-import './App.css';
-import Footer from './components/Footer';
-import Sections from './components/Sections';
-import { Contact } from './components/Contact';
+import Footer from './components/common/Footer';
+import { Header } from './components/common/Header';
+import { RouterInit } from './routers/RouterInit';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap';
 
 function App() {
-  const sections = [
-    '🎓 My Experience', '✏️ My Articles', '📲 My Social Media'];
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          🚧 <strong>juliocas.com</strong> is under construction now using React.
-        </p>
-        <Sections
-          sections={sections}
-        ></Sections>
-        <Contact></Contact>
-        <Footer></Footer>
-      </header>
-    </div>
+    <>
+      <Header></Header>
+      <RouterInit></RouterInit>
+      <Footer></Footer>
+    </>
   );
 }
 

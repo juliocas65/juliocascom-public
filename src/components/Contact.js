@@ -60,7 +60,7 @@ export const Contact = () => {
 
   return (
     <div className='container'>
-      <h3 className="show-contact" onClick={e => showContact()}>Contact me {showForm ? '↑' : '↓' } </h3>
+      <h3 className="show-contact m-2" onClick={e => showContact()}>Contact me {showForm ? '↑' : '↓' } </h3>
       {
         showForm === false ?
         <div></div>

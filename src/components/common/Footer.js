@@ -8,10 +8,11 @@ const Footer = () => {
   }
   return (
     <>
+    <div className='mt-3'>
       <p className='footer'>
         All rights reserved 2023
       </p>
-      <span className='email-contact'>
+      <p className='email-contact'>
         For any doubts, please contact me at:
         <a
           className="email"
@@ -19,7 +20,9 @@ const Footer = () => {
           onClick={e => handleEmail()}>
           {email}
         </a>
-      </span>
+      </p>
+    </div>
+
     </>
   );
 }
